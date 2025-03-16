@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semana 4</title>
+</head>
+
+<h1>Actividad de formulario</h1>
+
+<body>
+
+    <form action="https://playground.mockoon.com/users" method="post">
+
+        <header>
+
+            <h2>Contacto</h2>
+
+
+            <label for="name">Nombre Completo</label>
+            <input type="text" id="name" name="name" required placeholder="* Pepito Perez">
+            <br>
+
+            <label for="tel">Teléfono</label>
+            <input type="tel" name="tel" id="Teléfono" pattern="[0-9]{10}" title="Número de 10 dígitos">
+            <br>
+
+            <label for="email">Correo electronico</label>
+            <input type="email" id="email" name="email" placeholder="*" required>
+            <br>
+
+            <label for="password">Contraseña</label>
+            <input type="password" name="password" id="password" minlength="8" placeholder="*" required>
+            <label for="password">Confirmar Contraseña</label>
+            <input type="password" name="password" id="password" minlength="8" required placeholder="*">
+
+
+
+            <br>
+
+        </header>
+
+        <div>
+
+            <h2>Información personal</h2>
+
+            <label for="date">Fecha de nacimiento</label>
+            <input type="date" name="date" id="date" required>
+            <br>
+
+            <label for="gender">Genero:</label>
+
+            <div>
+                <input type="radio" name="gender" id="gender">
+                <label for="">Femenino</label>
+            </div>
+
+            <div>
+                <input type="radio" name="gender" id="gender">
+                <label for="">Masculino</label>
+            </div>
+
+            <div>
+                <input type="radio" name="gender" id="gender">
+                <label for="">Otro</label>
+            </div>
+
+
+            <label for="interests">Intereses: </label>
+
+            <div>
+                <input type="checkbox" name="checkbox" id="checkbox">
+                <label for="interests">Comida</label>
+
+                <input type="checkbox" name="checkbox" id="checkbox">
+                <label for="interests">Deportes</label>
+
+                <input type="checkbox" name="checkbox" id="checkbox">
+                <label for="interests">Viajes</label>
+            </div>
+
+            <label for="pais">País:</label>
+            <select id="pais" name="pais" required>
+                <option value="">País de nacimiento</option>
+                <option value="col">Colombia</option>
+                <option value="EE.UU">Estados Unidos</option>
+                <option value="PR">Puerto Rico</option>
+            </select>
+            <br>
+
+            <label for="biagrafia">Biografía :</label>
+            <textarea name="biagrafia" id="biagrafia" placeholder="Cuentanos un poco sobre ti"></textarea>
+            <br>
+
+        </div>
+
+        <button type="submit">Subir Información</button>
+
+
+    </form>
+
+</body>
+
+</html>
